@@ -1,0 +1,109 @@
+*{
+    color: black;
+}
+
+body {
+    background-color: #C58940;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.status {
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+h2 {
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+h2 span {
+    color: #FAEAB1;
+    font-weight: 600;
+}
+
+.control {
+    position: absolute;
+    top: 12%;
+    right: 20%;
+}
+
+
+.start , .pause {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAEAB1;
+    color: black;
+    width: 100px;
+    display: block;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: #333;
+    color: #FAEAB1;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+.grid {
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.square {
+    border: solid 1px rgb(1, 59, 59);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.target {
+    background-image: url('./whacAMoleImg.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .grid {
+        width: 402px;
+        height: 400px;
+        top: 60%;
+    }
+    
+    .square {
+        width: 132px;
+        height: 132px;
+    }
+
+    .status {
+        /* width: 50px; */
+        top: 0%;
+        left: 10%;
+    }
+
+    .control {
+        top: 2%;
+        left: 60%;
+    }
+}
