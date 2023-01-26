@@ -55,12 +55,14 @@ h2 span {
     width: 100px;
     display: block;
     padding: 15px;
-    margin-bottom: 10px;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 1px 1px 10px black;
     border: solid 1px black;
     border-radius: 10px;
+}
+.start {
+    margin-bottom: 10px;
 }
 
 button:active {
